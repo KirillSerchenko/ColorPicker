@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: url('../Resources/bcg.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+#al {
+  width: 50%;
+  transition: color 1.5s ease-in-out, background-color 1.5s ease-in-out;
+  background-color: lightgray;
+  color: red;
+}
+
+#al:hover {
+  transform: scale(1.1);
+  color: lightgrey;
+  background-color: red;
+}
+
+#backDrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+#headersPickerContainer {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#colorHeader {
+  text-shadow: 2px 2px aliceblue;
+  font-family: 'Coiny', cursive;
+  display: inline;
+}
+
+#pickerHeader {
+  text-shadow: 2px 2px whitesmoke;
+  font-family: 'Coiny', cursive;
+  display: inline;
+}
+
+.gifhyImage {
+  box-shadow: 7px 8px 9px black;
+  width: 70%;
+  height: 30%;
+  margin-left: 15%;
+  border: 2px solid black;
+}
